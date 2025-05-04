@@ -54,7 +54,7 @@ const _renderDataList = () => {
   const cardBox = document.querySelector("#card-box");
   const renderHTML = listaDatos.map((card) => {
     return `
-    <div class="card w-50 h-30 border-1 flex flex-row border-gray-600 rounded-lg gap-3 p-3">
+    <div class="card w-60 h-35 border-1 flex flex-row border-gray-600 rounded-lg gap-3 p-3">
       <div class="card__left-side flex flex-col w-30">
         <div class="text-2xl mb-1">
           <p>&lt;/</p>
@@ -62,14 +62,14 @@ const _renderDataList = () => {
   
         <div class="border-b-3 rounded-lg border-gray-600"></div>
   
-        <div class="text-sm">
+        <div class="text-xs">
           <p id="pName">${card.fullName}</p>
           <p id="pEmail">${card.email}</p>
           <p id="pMovil">${card.nMovil}</p>
           <p id="pLugar">${card.lugar}</p>
         </div>
       </div>
-      <div class="card-right-side flex justify-center items-center text-4xl">
+      <div class="card-right-side w-30 flex justify-center items-center text-4xl">
         ${card.icono}
       </div>
     </div>`;
